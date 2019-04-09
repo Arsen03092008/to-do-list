@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="list">
+    <li>
+        <input type="text">
+        <button>
+            Delete
+        </button>
+    </li>
+</ul>
+<button onclick="add()" style="width: 80px;height: 80px">
+
+</button>
+</body>
+<script>
+    function add ()  {
+        list=document.getElementById('list')
+        child = document.createElement('div')
+        child.innerHTML = '<li>\n' +
+            '        <input type="text">\n' +
+            '        <button >\n' +
+            '            delete\n' +
+            '        </button>\n' +
+            '    </li>'
+        list.appendChild(child)
+    }
+</script>
+</html>
